@@ -33,7 +33,7 @@ public class EmployeeController {
         return employeeService.updateEmployee(employee);
     }
     @DeleteMapping("/del")
-    public boolean deleteEmployee(@RequestBody Employee employee) {
-        return employeeService.deleteEmployee(employee);
+    public void deleteEmployee(@RequestBody Employee employee) {
+         employeeService.deleteEmployee(employee);
     }
 }
